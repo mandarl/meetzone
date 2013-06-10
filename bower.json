@@ -1,0 +1,13 @@
+{
+  "name": "meetzone",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "yepnope": "~1.5.4"
+  }
+}
