@@ -22,7 +22,6 @@ requirejs.config({
             deps: ['jquery']
         }
     }
-
 });
 
 // Load the main app module to start the app
