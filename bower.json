@@ -7,7 +7,14 @@
     "components"
   ],
   "dependencies": {
+    "pubsubjs": "~0.3.2",
     "modernizr": "~2.6.2",
-    "yepnope": "~1.5.4"
+    "jquery": "~1.8.3",
+    "require-css": "~0.0.6",
+    "eve-adobe": "~0.2.4",
+    "raphael": "~2.1.0",
+    "requirejs": "~2.1.6",
+    "yepnope": "~1.5.4",
+    "bootstrap": "~2.3.2"
   }
 }

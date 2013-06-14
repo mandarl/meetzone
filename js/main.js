@@ -1,4 +1,4 @@
-define(["jquery", "raphael", "polyfill", "bootstrap"], function($) {
+define(['jquery', './zoneslider', 'raphael',  'pubsub', 'polyfill', 'bootstrap'], function($, ZoneSlider, Raphael, Pubsub) {
 
     $(document).ready(function() {
         doPolyFill();
@@ -24,17 +24,24 @@ define(["jquery", "raphael", "polyfill", "bootstrap"], function($) {
         });
     });
     
-    
+    console.log(Pubsub);
+    window.pubsub = new Pubsub();
+    /*window.pubsub.subscribe('drag.start', function() {
+        console.log('drag start from subscribe');
+    });*/
+
     function drawZoneslider() {
         var width = window.innerWidth;
         var height = window.innerHeight;
-        var paper = Raphael("zoneslider",width-10,500);
+        var paper = Raphael("zoneslider",width-25,500);
         console.log("Drawing zoneslider");
-        //zoneslider = new ZoneSlider(paper);
-    };
+        var zoneslider = new ZoneSlider(paper);
+    }
 
 
 });
+
+
 
 
 var citiesdata;
@@ -43,4 +50,3 @@ function showContent() {
     $('#loading-screen').hide();
     $('#content').show();
 }
-

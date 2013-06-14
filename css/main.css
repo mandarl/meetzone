@@ -4,9 +4,9 @@ h1 {
 }
 
 label{
-    display:inline-block;
-    min-width:80px;
-    -width:80px;
+    display: inline-block !important;
+    min-width: 50px;
+    -width: 50px;
 }
 
 #content {
